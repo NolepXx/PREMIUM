@@ -16,7 +16,9 @@ pip2 install mechanize && pip2 install requests
 
 git clone https://github.com/NolepXx/KAWAII3
 
-cd KAWAII3
+cd KAWAII3 
+
+git pull 
 
 pip install requests && pip install mechanize
 
