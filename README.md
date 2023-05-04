@@ -24,4 +24,4 @@ pip install pycryptodome && pip install Crypto && pip install Crypto
 
 pip install stdiomask && pip install rich && pip install colorama && pip install bs4
 
-python BrayennnFB.py
+python AnimeMax.py
