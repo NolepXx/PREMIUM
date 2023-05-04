@@ -14,9 +14,9 @@ pkg install python
 
 pip2 install mechanize && pip2 install requests
 
-git clone https://github.com/NolepXx/UAAAEMAA
+git clone https://github.com/NolepXx/KAWAII3
 
-cd UAAAEMAA
+cd KAWAII3
 
 pip install requests && pip install mechanize
 
