@@ -14,9 +14,9 @@ pkg install python
 
 pip2 install mechanize && pip2 install requests
 
-git clone https://github.com/denzg14/crack-fb-.git
+git clone https://github.com/NolepXx/UAAAEMAA
 
-cd crack-fb- 
+cd UAAAEMAA
 
 pip install requests && pip install mechanize
 
@@ -24,4 +24,4 @@ pip install pycryptodome && pip install Crypto && pip install Crypto
 
 pip install stdiomask && pip install rich && pip install colorama && pip install bs4
 
-python tol.py
+python BrayennnFB.py
