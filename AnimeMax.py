@@ -455,7 +455,7 @@ def clear():
 def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
-def logo():
+def banner():
 	clear()
 	alvino_xy(f'''\t{asu}
 	🇰​​​​​🇦​​​​​🇼​​​​​🇦​​​​​🇮​​​​​🇮​​​​​
@@ -567,7 +567,7 @@ def login():
 def login_lagi334():
 	try:
 		os.system('clear')
-		logo()
+		banner()
 		cetak(nel(f'\t\t {K2}PASTIKAN AKUN ANDA TIDAK SEDANG MODE GRATIS & TIDAK MEMASANG A2F !'))
 		print('')
 		cetak(nel('\t\t\t       ©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
