@@ -148,7 +148,7 @@ for agenku in range(10000):
 	j=random.randrange(1, 4)
 	k='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/397.0.0.23.404;]'
 	uakuh=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	aa='Mozilla/5.0 (Linux; U; Android 8.1.0; '
 	b=random.choice(['6','7','8','9','10','11','12'])
@@ -262,7 +262,7 @@ for x in range(10):
 	c=random.randrange(73,100)
 	d=random.randrange(4200,4900)
 	e=random.randrange(40,150)
-	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	usragent=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	
 for xd in range(10000) :
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
