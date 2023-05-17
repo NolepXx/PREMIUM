@@ -23,6 +23,15 @@ from rich.markdown import Markdown as mark
 from concurrent.futures import ThreadPoolExecutor as tred
 from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
 from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
+###----------[ APPEND ]---------- ###
+mytok = []
+ugent = []
+ugen = []
+usam = []
+ugen2 = []
+uakuh = []
+usragent = []
+uaku2 = []
 #------------------[  MODULE  ]-------------------#
 try:
         import rich
