@@ -364,20 +364,17 @@ def logo():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[[bold cyan]01[bold white]] Login Menggunakan Cookie              [[bold cyan]03[bold white]] Cara Mendapatkan Cookie \n[[bold cyan]02[bold white]] Menu Crack Tanpa Login                [[bold cyan]04[bold white]] Cek Hasil Crack ",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
-	bryn = input(f' [+] Pilih Menu : ')
+	print('')
+	cetak(panel(f"{K2}[{H2}01{K2}] {K2}Lanjut Ke Menu Login\n{K2}[{H2}02{K2}] {K2}Cara Mengetahui ID Facebook\n{K2}[{H2}03{K2}] {K2}Cara Mengambil Cookie Akun Facebook\n",width=101,title=f"{K2}Menu Login & Tutorial",subtitle_align='center',padding=(0,2),style=f"green"))
+	bryn = input(f'\033[93m╰─> \x1b[1;92mPilih Menu > \033[93m')
 	if bryn in ['1','01']:
 		login_lagi334()
 	elif bryn in ['2','02']:
-		lainnya()
+		id_id()
 	elif bryn in ['3','03']:
-		os.system("xdg-open https://youtu.be/oP7grjB3LSY")
-		time.sleep(5)
-		exit()
-	elif bryn in ['4','04']:
-		result()
+		cookie_id()
 	else:
-		print(' [+] Pilih Yang Bener Asu ')
+		print('\033[93m╰─> \x1b[1;92mPilih Yang Bener Kak ! ')
 		time.sleep(5)
 		back()
 		
@@ -394,7 +391,7 @@ def login():
 		except KeyError:
 			login123()
 		except requests.exceptions.ConnectionError:
-			li = ' [+] Problem Internet Connection, Check And Try Again'
+			li = 'TIDAK ADA KONEKSI INTERNET, PERIKSA & COBA LAGI !'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
@@ -403,8 +400,12 @@ def login():
 		
 def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
-		your_cookies = input(' [+] Masukan Cookie : ')
+		os.system('clear')
+		banner()
+		cetak(nel(f'\t\t {K2}PASTIKAN AKUN ANDA TIDAK SEDANG MODE GRATIS & TIDAK MEMASANG A2F !'))
+		print('')
+		cetak(nel('\t\t\t       ©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
+		your_cookies = input('\033[93m╰─> \x1b[1;92mMasukkan Cookie Akun Facebook Anda > \033[93m')
 		with requests.Session() as r:
 			try:
 				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
@@ -416,7 +417,7 @@ def login_lagi334():
 				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
 				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
 				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print(" [+] Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
+					print("\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mCookie Nya Invalid Kak, Silahkan Periksa Cookie Nya/Akunnya Terlebih Dahulu Lalu Coba Lagi \33[m(\x1b[1;91m×\33[m)", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
 				else:
 					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
 					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
@@ -448,12 +449,12 @@ def login_lagi334():
 							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com','accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
 							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
 							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-							print(f"\n [+] Token : {access_token}")
+							print(f"\n╰─> \x1b[1;92mToken Akun Facebook Kamu > \033[93m{access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n [+] Login Berhasil | python AnimeMax.py");exit()
+							print("\n╰─> \x1b[1;92mLOGIN BERHASIL,SILAHKAN JALANKAN KEMBALI PERINTAHNYA DENGAN KETIK > \033[93mpython AnimeMax.py");exit()
 			except Exception as e:
-				print(" [+] Cookies Mokad Kontol")
+				print("\x1b[1;92m[×\x1b[1;92m]\033[93m ╰─>\x1b[1;92mCOOKIE NYA MOKAD KAK !")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
