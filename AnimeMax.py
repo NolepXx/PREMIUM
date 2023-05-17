@@ -401,7 +401,7 @@ def login():
 def login_lagi334():
 	try:
 		os.system('clear')
-		banner()
+		logo()
 		cetak(nel(f'\t\t {K2}PASTIKAN AKUN ANDA TIDAK SEDANG MODE GRATIS & TIDAK MEMASANG A2F !'))
 		print('')
 		cetak(nel('\t\t\t       ©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
