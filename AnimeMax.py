@@ -470,7 +470,7 @@ def menu(my_name,my_id):
 		time.sleep(5)
 		login()
 	os.system('clear')
-	banner()
+	logo()
 	negara = requests.get("http://ip-api.com/json/").json()["country"]
 	ip = requests.get("http://ip-api.com/json/").json()["query"]
 	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{waktu}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.2[/][/] ',width=43,padding=(0,3),style=f"bold white"))
