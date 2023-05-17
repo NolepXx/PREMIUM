@@ -359,7 +359,7 @@ def logo():
 ▒█░▄▀ ▒█░▒█ ▒█░▒█ ▒█▀▀▄ ▒█░▒█ ▒█▀▀▀ ▒█▀▀▀█ ▒█░▒█ ░█▀▀█ ▀█▀ ▀█▀ 
 ▒█▀▄░ ▒█▀▀█ ▒█░▒█ ▒█░▒█ ▒█▀▀█ ▒█▀▀▀ ░▀▀▀▄▄ ▒█▀▀█ ▒█▄▄█ ▒█░ ▒█░ 
 ▒█░▒█ ▒█░▒█ ░▀▄▄▀ ▒█▄▄▀ ▒█░▒█ ▒█▄▄▄ ▒█▄▄▄█ ▒█░▒█ ▒█░▒█ ▄█▄ ▄█▄
-              {m}▪︎{k}▪︎{h}▪︎{sir} KAWAII ANIME MAXX BY CLAOUPY BUFORG {x}{m}▪︎{k}▪︎{h}▪︎{x}''')  \033[1;33mAuthor : NolepXx\33[m""")
+              {m}▪︎{k}▪︎{h}▪︎{sir} KAWAII ANIME MAXX BY CLAOUPY BUFORG {x}{m}▪︎{k}▪︎{h}▪︎{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
