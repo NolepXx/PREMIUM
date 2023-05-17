@@ -525,7 +525,7 @@ def logo():
 ▒█░▄▀ ▒█░▒█ ▒█░▒█ ▒█▀▀▄ ▒█░▒█ ▒█▀▀▀ ▒█▀▀▀█ ▒█░▒█ ░█▀▀█ ▀█▀ ▀█▀ 
 ▒█▀▄░ ▒█▀▀█ ▒█░▒█ ▒█░▒█ ▒█▀▀█ ▒█▀▀▀ ░▀▀▀▄▄ ▒█▀▀█ ▒█▄▄█ ▒█░ ▒█░ 
 ▒█░▒█ ▒█░▒█ ░▀▄▄▀ ▒█▄▄▀ ▒█░▒█ ▒█▄▄▄ ▒█▄▄▄█ ▒█░▒█ ▒█░▒█ ▄█▄ ▄█▄
-         prints(Panel(logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}â¢{II}â¢{MM}â¢ {OO}BOBOHO TEAM ENDUT {MM}â¢{II}â¢{QQ}â¢"))
+             {u}▪︎{k}▪︎{h}▪︎{sir} BOBOHO TEAM ENDUT EAT SAMPE {x}{u}▪︎{k}▪︎{h}▪︎{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
