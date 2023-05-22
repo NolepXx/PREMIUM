@@ -770,7 +770,7 @@ def banner():
 .#%-==  .*-   ==   :. .@#*==-++   +:  .-@-.   *-:#+------=+**:                  
  .##               -  ##=+-----.  .=   :+.   .*  -=*-*=+-@                      
                    :  + =*+   :-#  .:  :+-   -+ .-*=@=--:                       
-                  *  :  *=:     : .          . -=.--:-.+#                       
+                  *  :  *=:     : .          . -=.--:-.+#   AOUTHOR : DEMIAS, XZONXD, BRAYENNNXD ALL AOUTHOR THNKS ♥️♥️            
                   - .=  :*+         =:*-:-+-:  .      #*:                       
                  ..:-    :+++.       =--=--=        =**-                        
                   *:       *:*:                   :#-*.                         
@@ -779,13 +779,31 @@ def banner():
 :......                          +.- +%--++  . =                                
                                   :=#%%-:=%@@+-                                 
 
+ oooooooo8 oooo   oooo ooooooooooo ooooo       ooooooooooo ooooooooooo   ooooooo  oooo   oooo 
+888         888  o88    888    88   888         888    88  88  888  88 o888   888o 8888o  88  
+ 888oooooo  888888      888ooo8     888         888ooo8        888     888     888 88 888o88  
+        888 888  88o    888    oo   888      o  888    oo      888     888o   o888 88   8888  
+o88oooo888 o888o o888o o888ooo8888 o888ooooo88 o888ooo8888    o888o      88ooo88  o88o    88  
+                                                                                              
+oooooooooo ooooo            o       oooooooo8 oooo   oooo                                     
+ 888    888 888            888    o888     88  888  o88                                       
+ 888oooo88  888           8  88   888          888888                                         
+ 888    888 888      o   8oooo88  888o     oo  888  88o                                       
+o888ooo888 o888ooooo88 o88o  o888o 888oooo88  o888o o888o                                     
+                                                                                              
+     o      oooooooooo  oooo     oooo ooooo  oooo                                             
+    888      888    888  8888o   888    888  88                                               
+   8  88     888oooo88   88 888o8 88      888                                                 
+  8oooo88    888  88o    88  888  88      888                                                 
+o88o  o888o o888o  88o8 o88o  8  o88o    o888o                                                
+
             ''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
 	banner()
 	print('')
-	cetak(panel(f"{K}[{H}01{K}] {K}Lanjut Ke Menu Login\n{K}\n",width=101,title=f"{K2}Menu Login & Tutorial",subtitle_align='center',padding=(0,2),style=f"green"))
+	cetak(panel(f"{K}[{H}01{K}] {K}Lanjut Ke Menu Login\n{K}\n",width=101,title=f"{K}Menu Login & Tutorial",subtitle_align='center',padding=(0,2),style=f"green"))
 	bryn = input(f'\033[93m╰─> \x1b[1;92mPilih Menu > \033[93m')
 	if bryn in ['1','01']:
 		login_lagi334()
