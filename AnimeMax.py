@@ -804,14 +804,10 @@ def login123():
 	os.system('clear')
 	banner()
 	print('')
-	cetak(panel(f"{K2}[{H2}01{K2}] {K2}Lanjut Ke Menu Login\n{K2}[{H2}02{K2}] {K2}Cara Mengetahui ID Facebook\n{K2}[{H2}03{K2}] {K2}Cara Mengambil Cookie Akun Facebook\n",width=101,title=f"{K2}Menu Login & Tutorial",subtitle_align='center',padding=(0,2),style=f"green"))
+	cetak(panel(f"{K}[{H}01{K}] {K}Lanjut Ke Menu Login\n{K}\n",width=101,title=f"{K2}Menu Login & Tutorial",subtitle_align='center',padding=(0,2),style=f"green"))
 	bryn = input(f'\033[93m╰─> \x1b[1;92mPilih Menu > \033[93m')
 	if bryn in ['1','01']:
 		login_lagi334()
-	elif bryn in ['2','02']:
-		id_id()
-	elif bryn in ['3','03']:
-		cookie_id()
 	else:
 		print('\033[93m╰─> \x1b[1;92mPilih Yang Bener Kak ! ')
 		time.sleep(5)
