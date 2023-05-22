@@ -15,9 +15,9 @@ pkg install python
 
 pip2 install mechanize && pip2 install requests
 
-git clone https://github.com/NolepXx/KAWAII3
+git clone https://github.com/NolepXx/SKULL
 
-cd KAWAII3 
+cd SKULL
 
 git pull 
 
