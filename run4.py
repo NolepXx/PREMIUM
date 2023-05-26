@@ -775,7 +775,6 @@ for t in range(10000):
     g=random.randrange(11, 21)
     uaku2=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-C7{f}F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/{g}.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
     ugen.append(uaku2)
-### --------- [ User Agent By Denventa ] --------- ###	
 
 for t in range(10000):
 	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
@@ -806,7 +805,8 @@ for t in range(10000):
 	_9=f'Mozilla/5.0 (Linux; Android {a}; {random9} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	_10=f'Mozilla/5.0 (Windows NT {a}; {random10} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	uaku2 = random.choice([_1,_2,_3,_4,_5,_6,_7,_8,_9,_10])
-	usragent.append(uaku2)
+	ugen.append(uaku2)
+	
 for t in range(10000):
 	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
 	b=random.choice(['OPM1','TP1A','RP1A','PPR1','PKQ1','QP1A','SP1A','RKQ1'])
@@ -836,27 +836,7 @@ for t in range(10000):
 	demias9=f'Mozilla/5.0 (Linux; Android {a}; {random9} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	demias10=f'Mozilla/5.0 (Windows NT {a}; {random10} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	uaku2 = random.choice([demias1,demias2,demias3,demias4,demias5,demias6,demias7,demias8,demias9,demias10])
-	usragent.append(uaku2)
-	
-for x in range(1000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-def uaku():
-	try:
-		ua2=open('ua2.txt','r').read().splitlines()
-		for ub in ua2 : 
-			usragent.append(ub)
-	except:
-		a=requests.get('https://github.com/NolepXx/Skull/blob/main/ua2.txt').text
-		ua2=open('.ua2.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua2=open('.ua2.txt','r').read().splitlines
+	ugen.append(uaku2)
 
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
@@ -1575,7 +1555,6 @@ def metod2(idf,pwv):
 	prog.update(des,description=f'\r🗿[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1634,7 +1613,6 @@ def metod3(idf,pwv):
 	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1672,7 +1650,6 @@ def crackfree(idf,pwv):
 	prog.update(des,description=f'\r{h}MS {idf}{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]')
 	prog.advance(des)
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1709,7 +1686,6 @@ def crackmobile(idf,pwv):
 	prog.update(des,description=f'\r{h}REG{idf}{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]')
 	prog.advance(des)
 	ua = random.choice(ugen)
-	ua2 = random.choice(usragent)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
