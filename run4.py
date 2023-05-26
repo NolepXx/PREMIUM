@@ -1408,9 +1408,9 @@ def atur_dulu():
 	print(f'{ung}')
 	print('━─═ ◕➤ 1. MS')
 	print(' ━─═ ◕➤2. REG (Dijamin Gacor)')
-	print(' ━─═ ◕➤3. MET1 (Kopi Mix)
-	print(' ━─═ ◕➤4. MET2 (Kopi Susu)
-	print(' ━─═ ◕➤5. MET3 (Kopi Torabika)
+	print(' ━─═ ◕➤3. MET1 (Kopi Mix)')
+	print(' ━─═ ◕➤4. MET2 (Kopi Susu)')
+	print(' ━─═ ◕➤5. MET3 (Kopi Torabika)')
 	metod = input(f'{biru}>> : ')
 	if metod in ['1','01']:
 		bra.append('free')
