@@ -1495,7 +1495,7 @@ def cektahun(fx):
 ###----------[ REGULAR ]----------###
 def metod1(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
+	prog.update(des,description=f'\r[metod1]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(ugen)
 	ua2 = random.choice(usragent)
@@ -1553,7 +1553,7 @@ def metod1(idf,pwv):
 ###----------[ ASYNC ]----------###
 def metod2(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r🗿[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
+	prog.update(des,description=f'\r🗿[metod2]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(ugen)
 	ses = requests.Session()
@@ -1611,7 +1611,7 @@ def metod2(idf,pwv):
 ###----------[ VALIDATE ]----------###
 def metod3(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
+	prog.update(des,description=f'\r[metod3]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(ugen)
 	ses = requests.Session()
