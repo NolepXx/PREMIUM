@@ -771,7 +771,7 @@ for t in range(10000):
     f= random.randrange(15, 40)
     g=random.randrange(11, 21)
     uaku2=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-C7{f}F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/{g}.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-    ugen.ppend(uaku2)
+    ugen.append(uaku2)
 
 for apa in range(10000):
 	rr = random.randint; rc = random.choice
