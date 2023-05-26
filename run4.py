@@ -1470,11 +1470,11 @@ def passwrd():
 				elif 'method1' in bra:
 					gas_krek.submit(method1,idf,pwv)
 				elif 'mobile' in bra:
-					gas_krekas_krek.submit(crackmobile,idf,pwv)
+					gas_krek.submit(crackmobile,idf,pwv)
 				elif 'method2' in bra:
-					gas_krekas_krek.submit(method2,idf,pwv)
+					gas_krek.submit(method2,idf,pwv)
 				elif 'method3' in bra:
-					gas_krekas_krek.submit(method3,idf,pwv)
+					gas_krek.submit(method3,idf,pwv)
 				else:
 					gas_krek.submit(crackfree,idf,pwv)
 		print(f'{hijo}')
