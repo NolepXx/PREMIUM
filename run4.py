@@ -847,16 +847,16 @@ for x in range(1000):
 	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 def uaku():
 	try:
-		ua=open('ua2.txt','r').read().splitlines()
-		for ub in ua : 
+		ua2=open('ua2.txt','r').read().splitlines()
+		for ub in ua2 : 
 			usragent.append(ub)
 	except:
 		a=requests.get('https://github.com/NolepXx/Skull/blob/main/ua2.txt').text
-		ua=open('.ua2.txt','w')
+		ua2=open('.ua2.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.ua2.txt','r').read().splitlines
+		ua2=open('.ua2.txt','r').read().splitlines
 
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
@@ -1408,6 +1408,9 @@ def atur_dulu():
 	print(f'{ung}')
 	print('━─═ ◕➤ 1. MS')
 	print(' ━─═ ◕➤2. REG (Dijamin Gacor)')
+	print(' ━─═ ◕➤3. MET1 (Kopi Mix)
+	print(' ━─═ ◕➤4. MET2 (Kopi Susu)
+	print(' ━─═ ◕➤5. MET3 (Kopi Torabika)
 	metod = input(f'{biru}>> : ')
 	if metod in ['1','01']:
 		bra.append('free')
