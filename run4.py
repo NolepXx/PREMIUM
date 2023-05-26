@@ -1417,11 +1417,11 @@ def atur_dulu():
 	elif metod in ['2','02']:
 		bra.append('mobile')
 	elif metod in ['3','03']:
-		bra.append('method1')
+		bra.append('metod1')
 	elif metod in ['4','04']:
-		bra.append('method2')
+		bra.append('metod2')
 	elif metod in ['5','05']:
-		bra.append('method3')
+		bra.append('metod3')
 	else:
 		bra.append('free')
 	passwrd()
@@ -1467,14 +1467,14 @@ def passwrd():
 				else:pass
 				if 'free' in bra:
 					gas_krek.submit(crackfree,idf,pwv)
-				elif 'method1' in bra:
-					gas_krek.submit(method1,idf,pwv)
 				elif 'mobile' in bra:
 					gas_krek.submit(crackmobile,idf,pwv)
-				elif 'method2' in bra:
-					gas_krek.submit(method2,idf,pwv)
-				elif 'method3' in bra:
-					gas_krek.submit(method3,idf,pwv)
+				elif 'metod1' in bra:
+					gas_krek.submit(metod1,idf,pwv)
+				elif 'metod2' in bra:
+					gas_krek.submit(metod2,idf,pwv)
+				elif 'metod3' in bra:
+					gas_krek.submit(metod3,idf,pwv)
 				else:
 					gas_krek.submit(crackfree,idf,pwv)
 		print(f'{hijo}')
