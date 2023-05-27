@@ -23,7 +23,7 @@ usragent = []
 tokenku = []
 ###----------[ GET PROXY ]----------###
 try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=800000&country=all&ssl=all&anonymity=all').text
 	open('.socksku.txt','w').write(proxylist)
 except Exception as e:
 	bra_anim(f'Nyalain data Suhu')
