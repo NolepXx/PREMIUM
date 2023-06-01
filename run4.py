@@ -1299,10 +1299,10 @@ def result():
 ###----------[  ATUR DULU STER ]----------###
 def atur_dulu():
 	print(f'{ung}')
-	print(f'━─═ ◕➤ [[{biru}CRACK DARI ID{biru}]]')
-	print(f'━─═ ◕➤1. MAMAT [{kun}TUA{kun}]')
-	print(f' ━─═ ◕➤2. JOE [{kun}MUDA{kun}]')
-	print(f' ━─═ ◕➤3. NANI [{kun}ACAK{kun}]')
+	print(f'━─═ ◕➤ [[{kun}CRACK DARI ID{biru}]]')
+	print(f'━─═ ◕➤1. MAMAT [{kun}TUA{biru}]')
+	print(f' ━─═ ◕➤2. JOE [{kun}MUDA{biru}]')
+	print(f' ━─═ ◕➤3. NANI [{kun}ACAK{biru}]')
 	aturid = input(f'{hijo}━─═ ◕➤: ')
 	if aturid in ['1','01']:
 		for tua in sorted(id):
