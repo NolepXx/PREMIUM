@@ -1119,8 +1119,8 @@ def menu(id):
 	os.system('clear')
 	banner()
 	print(f'{ung}─────────────────────────────')
-	print(f'{biru}━─═ ◕➤Ketik Y Untuk Memulai Crack Publick')
-	print(f'{biru}━─═ ◕➤Ketik M Untuk Memulai Crack Massal')
+	print(f'{cyan}━─═ ◕➤Ketik Y Untuk Memulai Crack Publick')
+	print(f'{mer}━─═ ◕➤Ketik M Untuk Memulai Crack Massal')
 	print(f'{biru}━─═ ◕➤Ketik K Untuk Cek Result Atau Cek Hasil')
 	helpbas = input(f'{hijo}━─═ ◕➤ : ')
 	if helpbas in ['y','Y']:
