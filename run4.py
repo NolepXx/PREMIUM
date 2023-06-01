@@ -1119,7 +1119,7 @@ def menu(id):
 	os.system('clear')
 	banner()
 	print(f'{ung}─────────────────────────────')
-	print(f'{cyan}━─═ ◕➤Ketik Y Untuk Memulai Crack Publick')
+	print(f'{kun}━─═ ◕➤Ketik Y Untuk Memulai Crack Publick')
 	print(f'{mer}━─═ ◕➤Ketik M Untuk Memulai Crack Massal')
 	print(f'{biru}━─═ ◕➤Ketik K Untuk Cek Result Atau Cek Hasil')
 	helpbas = input(f'{hijo}━─═ ◕➤ : ')
