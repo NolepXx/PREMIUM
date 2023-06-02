@@ -1298,7 +1298,7 @@ def result():
 		exit()
 ###----------[  ATUR DULU STER ]----------###
 def atur_dulu():
-	print(f'{ung}')
+	print(f'{biru}')
 	print(f'━─═ ◕➤ [[{biru}CRACK DARI ID{biru}]]')
 	print(f'━─═ ◕➤1. MAMAT [{kun}TUA{biru}]')
 	print(f' ━─═ ◕➤2. JOE [{kun}MUDA{biru}]')
