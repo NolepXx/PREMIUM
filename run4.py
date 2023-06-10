@@ -1015,7 +1015,7 @@ def brayenmenu():
                 )
                 r.headers.update({
                     'sec-fetch-mode': 'navigate',
-                    'user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36',
+                    'user-agent': 'Mozilla/5.0 (Linux; Android 11; Infinix X6512 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36',
                     'sec-fetch-site': 'cross-site',
                     'Host': 'm.facebook.com',
                     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -1675,7 +1675,7 @@ def scarpping_ua():
     
     
     url = "https://api.apilayer.com/user_agent/generate?android=true&chrome=true"
-    header = {"apikey": ""}
+    header = {"apikey": "AIzaSyCiN10pUVE2HGtE1ZDQmgolmLbsM3e6oAw"}
     
     
     
