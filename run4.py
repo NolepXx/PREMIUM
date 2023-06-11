@@ -1670,25 +1670,7 @@ def crackmobile(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			waktu(31)
 	loop+=1
-def scarpping_ua():
-    
-    
-    
-    url = "https://api.apilayer.com/user_agent/generate?android=true&chrome=true"
-    header = {"apikey": "AIzaSyCiN10pUVE2HGtE1ZDQmgolmLbsM3e6oAw"}
-    
-    
-    
- 
-    try:
-        response = requests.get(url,headers=header)
-        if response.status_code == 200:
-         uascrap.append(response.json()['ua'])
-        else:
-         uascrap.append("Mozilla/5.0 (Linux; Android 11; Infinix X6512 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36[FBAN/EMA;FBLC/es_LA;FBAV/357.0.0.12.72")
-    except requests.exceptions.ConnectionError:
-	uascrap.append("Mozilla/5.0 (Linux; Android 11; Infinix X6512 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36[FBAN/EMA;FBLC/es_LA;FBAV/357.0.0.12.72")
-        uascrap.append("def scarpping_ua():
+
     
 if __name__=='__main__':
 	try:os.mkdir('/sdcard/OK')
