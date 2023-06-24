@@ -23,11 +23,11 @@ usragent = []
 tokenku = []
 ###----------[ GET PROXY ]----------###
 try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=800000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(proxylist)
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=800000&country=all&ssl=all&anonymity=all').text
+	open('.socksku.txt','w').write(prox)
 except Exception as e:
 	bra_anim(f'Nyalain data Suhu')
-prox=open('.prox.txt','r').read().splitlines()
+prox=open('.socksku.txt','r').read().splitlines()
 limitd=0
 for agenkuw in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
