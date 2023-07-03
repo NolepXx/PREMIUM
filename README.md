@@ -15,9 +15,9 @@ pkg install python
 
 pip2 install mechanize && pip2 install requests
 
-git clone https://github.com/NolepXx/SKULL
+git clone https://github.com/NolepXx/PREMIUM
 
-cd SKULL
+cd PREMIUM
 
 git pull 
 
@@ -27,4 +27,4 @@ pip install pycryptodome && pip install Crypto && pip install Crypto
 
 pip install stdiomask && pip install rich && pip install colorama && pip install bs4
 
-python run4.py
+python premium.py
