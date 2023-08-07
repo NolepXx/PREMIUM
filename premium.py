@@ -873,53 +873,42 @@ def login_menu():
 				time.sleep(3)
 				back()
 	except:pass 
-def menu(name,id):
-	try:sh = requests.get('https://httpbin.org/ip').json()
-	except:sh = {'origin':'-'}
+def menu(my_name,my_id):
 	try:
-		tglx = my_birthday.split('/')[1]
-		blnx = dic2[str(my_birthday.split('/')[0])]
-		thnx = my_birthday.split('/')[2]
-		birth = tglx+' '+blnx+' '+thnx
-	except:birth = '-'
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		print(' [+] Cookies Kadaluarsa ')
+		time.sleep(5)
+		login()
+	os.system('clear')
 	banner()
-	sg = '# INFORMASI USER'
-	fx = mark(sg, style='red')
-	sol().print(fx)
-	print(x+'['+h+'•'+x+'] \033[0;34mNama Akun Sia  : '+str(my_name))
-	print(x+'['+h+'•'+x+'] \033[0;34mID Akun Sua    : '+str(my_id))
-	print(x+'['+h+'•'+x+'] \033[93mTanggal Croot  : '+str(birth))
-	print(x+'['+h+'•'+x+'] \033[923mAlamat Ip    : '+str(sh['origin']))
-	io = '\x1b[1;92m[01] Crack Dari Pertemanan Publik\n\x1b[1;92m[02] Crack ID Dari Akun Publik (masal) \n\x1b[1;92m[03] Crack Dari Grup\n\x1b[1;92m[04] Bot Share Fb\n\x1b[1;92m[05] Crack Follower Fb\n\x1b[1;92m[06] Cek Hasil Crack\n\x1b[1;92m[07] Gantin User Agent\n\033\x1b[1;92m[08] Cek Hasil Crack\n[00] Keluar'
-	oi = nel(io, style='cyan')
-	cetak(nel(oi, title='PILIHAN MENU'))
-	jh = input(x+'['+p+'•'+x+'] Pilih : ')
-	if jh in ['1','01']:
-		dump_publik()
-	elif jh in ['2','02']:		
+	negara = requests.get("http://ip-api.com/json/").json()["country"]
+	ip = requests.get("http://ip-api.com/json/").json()["query"]
+	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{day}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.3[/][/] ',width=43,padding=(0,3),style=f"bold cyan"))
+	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{asal_kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{asal_reg}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold cyan"))
+	console.print(Columns(dia))
+	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Rochmat Basuki , Nazri XD , Aorec XD , Lukman-XD , Dapunta , Kall",width=90,title=f"[bold green]Thanks To",style=f"bold cyan"))
+	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Dump Id \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold cyan"))
+	cetak(panel(f"Jika Ingin Masuk Ke Menu Crack Instagram Ketik[bold green] Instagram[bold white] Untuk Masuk Ke Menu Instagram",width=90,style=f"bold cyan"))
+	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
+	if _____brayennn___xd____ in ['1','01']:
+		brayen_dump()
+	elif _____brayennn___xd____ in ['2','02']:
 		dump_massal()
-	elif jh in ['3','03']:
-		grup()
-	elif jh in ['4','04']:
-		 main()
-	elif jh in ['5','05']:
-		follower()
-	elif jh in ['6','06']:
+	elif _____brayennn___xd____ in ['3','03']:
 		result()
-	elif jh in ['7','07']:
-		useragent()
-	elif jh in ['8','08']:
+	elif _____brayennn___xd____ in ['4','04']:
 		file()
-	elif jh in ['0','00']:
+	
+	elif _____brayennn___xd____ in ['5','05']:
 		os.system('rm -rf .token.txt')
-		print(x+'['+h+'•'+x+'] Tunggu ...')
-		time.sleep(1)
-		sw = '# SUKSES KELUAR'
-		sol().print(mark(sw, style='green'))
-		exit()
+		os.system('rm -rf .cookie.txt')
+		print(f' [+] {m}Sukses Logout+Hapus Cookies')
+		time.sleep(5)
+		login()
 	else:
-		ric = '# PILIH YANG BENER LAH KONTOL'
-		sol().print(mark(ric, style='red'))
+		print(' [+] Pilih Yang Bener Asu ')
 		exit()
 
 def result():
@@ -1100,7 +1089,7 @@ def file():
 				time.sleep(2)
 				back()
 
-def dump_publik():
+def brayen_dump():
 	try:
 		token = open('.token.txt','r').read()
 	except IOError:
@@ -1593,239 +1582,7 @@ def cek_opsi():
 	dah = '# DONE'
 	sol().print(mark(dah, style='cyan'))
 	exit()
-
-def lah():
-	print("\r"+balmond+m+" Total ID : "+str(len(id))+"                     ")
-	input(balmond+m +" Mode Pesawat 5 Detik Dan Tekan Enter Untuk Mulai Crack ")
-	pass
-	setting()
 	
-def grup():
-	win = '# PASTIKAN ID GROUP PUBLIK'
-	win2 = mark(win, style='cyan')
-	sol().print(win2)
-	id = input(""+balmond+h+" Id Atau User Name Grup : ")
-	ua = 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/052.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba'
-	miskinlu = {"user-agent": ua}
-	url = "https://m.facebook.com/groups/"+id
-	ses = requests.Session()
-	try:
-		gn = parser(ses.get(url, headers=miskinlu).text, "html.parser")
-	except requests.exceptions.ConnectionError:
-		print(balmond+m+" Koneksi Internet Terputus..")
-		time.sleep(0.5)
-		exit()
-	berr = gn.find("title")
-	berr2 = berr.text.replace(" | Facebook","").replace(" Grup Publik","")
-	if berr2=='Masuk Facebook':
-		print(balmond+m+" Limit, Silahkan Mode Pesawat Dan Coba Lagi..")
-		time.sleep(0.5)
-		exit()
-	elif berr2=='Kesalahan':
-		jalan(balmond+m+" Grup Tidak Ditemukan..")
-		time.sleep(0.5)
-		exit()
-	else:pass
-	print(""+balmond+p+" Nama Grup : "+berr2)
-	ggs = gn.find_all('table')
-	ang = []
-	for ff in ggs:
-		anggo = ff.text
-		bro = anggo.replace('Anggota','')
-		try:
-			mex = int(bro)
-			jumlah = ang.append(mex)
-		except:
-			pass
-	if len(ang)==0:
-		print(balmond+h+" Anggota : -")
-	else:
-		print(balmond+h+" Anggota : "+str(ang[0]))
-	grup1(url)
-
-def grup1(urls):
-	use = []
-	ses = requests.Session()
-	print(""+balmond+p+" Jika Stack, Mode Pesawat 5 Detik")
-	print(balmond+p+" Sedang Mengumpulkan ID")
-	print(balmond+p+" Tekan CTRL + C Untuk Stop")
-	while True:
-		try:
-			ua = 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/052.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba'
-			miskinlu = {"user-agent": ua}
-			try:
-				url = use[0]
-			except:
-				url = urls
-			set = parser(ses.get(url, headers=miskinlu).text, "html.parser")
-			bf2 = set.find_all('a')
-			for g in bf2:
-				css = str(g).split('>')
-				if 'Lihat Postingan Lainnya</span' in css:
-					bcj = str(g).replace('<a href="','').replace('amp;','')
-					bcj2 = bcj.split(' ')[0].replace('"><img','')
-			tes = set.find_all('table')
-			for cari in tes:
-				liatnih = cari.text
-				spl = liatnih.split(' ')
-				if 'mengajukan' in spl:
-					idsiapa = re.findall('content_owner_id_new.\w+',str(cari))
-					idyou =	idsiapa[0].replace('content_owner_id_new.','')
-					namayou = liatnih.replace(' mengajukan pertanyaan .','')
-					idku = idyou+'|'+namayou
-					if idku in id:
-						continue
-					else:
-						id.append(idku)
-						print(("\r"+balmond+h+" { "+k+"Proses Mengambil ID "+str(len(id))+h+" }"), end="");sys.stdout.flush()
-				elif '>' in spl:
-					idsiapa = re.findall('content_owner_id_new.\w+',str(cari))
-					idyou =	idsiapa[0].replace('content_owner_id_new.','')
-					namayou = liatnih.split(' > ')[0]
-					idku = idyou+'|'+namayou
-					if idku in id:
-						continue
-					else:
-						id.append(idku)
-						print(("\r"+balmond+h+" { "+O+"Mengumpulkan ID "+str(len(id))+h+" }"), end="");sys.stdout.flush()
-				else:
-					continue
-			try:
-				link_ = bcj2
-				use.insert(0,'https://m.facebook.com'+link_)
-			except:
-				girang = set.find('title')
-				girang2 = girang.text.replace(" | Facebook","").replace(" Grup Publik","")
-				if girang2=='Masuk Facebook':
-					pass
-				else:
-					lah()
-		except requests.exceptions.ConnectionError:
-			try:
-				time.sleep(31)
-			except KeyboardInterrupt:
-				lah()
-		except KeyboardInterrupt:
-			lah()
-
-saat_ini = datetime.datetime.now()
-
-def run(link, token):
-
-    while True:
-
-        headers = {
-
-            'authority': 'graph.facebook.com',
-
-            'cache-control': 'max-age=0',
-
-            'sec-ch-ua-mobile': '?0',
-
-            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.66 Safari/537.36',
-
-        }
-
-        try:
-
-          response = requests.post(f'https://graph.facebook.com/me/feed?link={link}&published=0&access_token={token}', headers=headers)
-
-          print(response.text)
-
-        except:
-
-          sys.exit()
-
-def main():
-
-    banner()
-
-    print('\x1b[0;94m┌───────────────────────────────────┐')
-    #link = input('Link Posts : ')
-    token = input('├──[•] Token Facebook :\x1b[0;92m ')
-
-   # token = input('Token FB : ')
-    link = input('\x1b[0;94m├──[•] Link Postingan :\x1b[0;92m ')
-    print('\x1b[0;94m└───────────────────────────────────┘')
-
-    number_thread = int(input('[✓]––>ISI AJA 20 BG  :\x1b[0;92m  '))
-
-    for i in range(number_thread):
-        thread = threading.Thread(target=run, args=(link, token))
-#        print('SINGEK',thread.start())
-        thread.start()
-        
-def follower():
-    try:
-        token = open('.token.txt', 'r').read()
-    except IOError:
-        exit()
-
-    win = '# DUMP ID DARI FOLLOWER'
-    win2 = mark(win, style='cyan')
-    sol().print(win2)
-    print(x + '[' + h + '•' + x + '] Ketik "me" Jika Ingin Dari Follower Mu')
-    pili = input(x+'['+p+'f'+x+'] Masukkan ID Facebook : ')
-    try:
-        koh2 = requests.get('https://graph.facebook.com/' + pili + '?fields=subscribers.limit(5000)&access_token=' + tokenku[0]).json()
-        for pi in koh2['subscribers']['data']:
-            try:
-                id.append(pi['id'] + '|' + pi['name'])
-            except:
-                continue
-
-        print(x + '[' + h + '•' + x + '] Total : ' + str(len(id)))
-        setting()
-    except requests.exceptions.ConnectionError:
-        li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
-        lo = mark(li, style='red')
-        sol().print(lo, style='cyan')
-        exit()
-    except (KeyError, IOError):
-        teks = '# FOLLOWER TIDAK PUBLIK ATAU TOKEN RUSAK'
-        teks2 = mark(teks, style='red')
-        sol().print(teks2)
-        exit()
-
-def useragent():
-	print ("\n%s[%s01%s]. Ganti user agent "%(P,H,P))
-	print ("%s[%s02%s]. Cek user agent "%(P,H,P))
-	print ("%s[%s00%s]. Kembali "%(P,H,P))
-	__Aang__Sayang__Laura__ = input('\n%s[%s+%s] Pilih :%s '%(P,M,P,H))
-	uas(__Aang__Sayang__Laura__)
-	
-def uas(__Aang__Sayang__Laura__):
-	if __Aang__Sayang__Laura__ == '':
-		print ('\n%s[%s!%s] Yang bener kontol'%(P,K,P));jeda(2)
-		uas(__Aang__Sayang__Laura__)
-	elif __Aang__Sayang__Laura__ in("1","01"):
-		print ("%s[%s!%s] Ketik %scancel%s untuk gunakan ua dari script"%(P,H,P,H,P))
-		ua = input("%s[%s!%s] User agent :%s "%(P,H,P,H))
-		if ua in(""):
-			print ('\n%s[%s!%s] Yang bener kontol'%(P,K,P));jeda(2)
-			menu()
-		elif ua in("CANCEL","Cancel","cancel"):
-			ua_ = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
-			open("ua.txt","w").write(ua_);jeda(2)
-			print ("\n%s[%s✓%s]  Berhasil menggunakan user agent script "%(P,H,P));jeda(2)
-			pilihan().menu()
-		open("ua.txt","w").write(ua);time.sleep(2)
-		print ("\n%s[%s✓%s] Berhasil mengganti user agent"%(P,H,P));time.sleep(2)
-		menu()
-	elif __Aang__Sayang__Laura__ in("2","02"):
-		try:
-			ua_ = open('ua.txt', 'r').read();time.sleep(2)
-			print ("%s[%s+%s] User anget lu :%s%s "%(P,H,P,H,ua_));time.sleep(2)
-			input('\n%s[%s!%s] Tekan enter '%(P,H,P))
-			menu()
-		except IOError:
-			ua_ = '%s-'%(M)
-	elif __Aang__Sayang__Laura__ in("0","00"):
-		menu()
-	else:
-		print ('\n%s[%s!%s] Yang bener kontol'%(P,K,P));time.sleep(2)
-		uas(__Aang__Sayang__Laura__)
-		
 if __name__=='__main__':
 	try:os.mkdir('CP')
 	except:pass
