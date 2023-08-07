@@ -1206,20 +1206,20 @@ def setting():
 		exit()
 	met = '# PILIH METHOD CRACK'
 	sol().print(mark(met, style='cyan'))
-	ioz = '[01] Method B-Api\n[02] Method Mobile\n[03] Method Mbasic Selow Crack'
+	ioz = '[01] Method B-Api\n[02] Method Mobile\n[03] Method Mbasic Selow Crack\n[03] Method graph ngalir\n[04] Method Meta Jaya'
 	gess = nel(ioz, style='cyan')
 	cetak(nel(gess, title='METHOD'))
 	hc = input(x+'['+p+'f'+x+'] Pilih : ')
 	if hc in ['1','01']:
 		method.append('api')
-	elif hc in ['3','03']:
+	elif hc in ['2','02']:
 		method.append('Mbasic')
+	elif hc in ['3','03']:
+		method.append('reguler2')
 	elif hc in ['4','04']:
 		method.append('reguler2')
 	elif hc in ['5','05']:
 		method.append('validate1')
-	elif hc in ['6','06']:
-		method.append('mobile')
 	else:
 		method.append('api')
 	guw = '# PILIHAN OPSI CRACK '
