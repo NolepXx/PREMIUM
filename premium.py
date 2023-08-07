@@ -869,21 +869,20 @@ def menu(my_name,my_id):
 	print(f'>> Github   : {gh}')
 	print('')
 	print('>> 1. Crack Publik ')
-	print('>> 2. Crack Follower ')
-	print('>> 3. Crack Grup   ')
-	print('>> 4. Crack File	')
-	print('>> 5. Hasil Crack  ')
-	print('>> 0. Keluar       ')
+	print('>> 2. Crack dump ')
+	print('>> 3. Crack file   ')
+	print('>> 4. hasil   ')
+	print('>> 4. keluar   ')
 	_____alvino__adijaya_____ = input('\n>> Pilih : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
-	elif _____alvino__adijaya_____ in ['4']:
+	elif _____alvino__adijaya_____ in ['2']:
 		brayen_dump()
-	elif _____alvino__adijaya_____ in ['5']:
+	elif _____alvino__adijaya_____ in ['3']:
 		file()
-	elif _____alvino__adijaya_____ in ['6']:
+	elif _____alvino__adijaya_____ in ['4']:
 		result()
-	elif _____alvino__adijaya_____ in ['0']:
+	elif _____alvino__adijaya_____ in ['5']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print('>> Sukses Logout+Hapus Kukis ')
