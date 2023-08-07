@@ -877,12 +877,8 @@ def menu(my_name,my_id):
 	_____alvino__adijaya_____ = input('\n>> Pilih : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
-	elif _____alvino__adijaya_____ in ['2']:
-		dump_follower()
-	elif _____alvino__adijaya_____ in ['3']:
-		grup()
 	elif _____alvino__adijaya_____ in ['4']:
-		crack_file()
+		file()
 	elif _____alvino__adijaya_____ in ['5']:
 		result()
 	elif _____alvino__adijaya_____ in ['0']:
