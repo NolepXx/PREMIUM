@@ -1680,8 +1680,16 @@ def ceker(idf,pw):
 		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 	
 if __name__=='__main__':
-	try:os.mkdir('CP')
+	try:os.system('git pull')
 	except:pass
-	try:os.mkdir('OK')
+	try:os.mkdir('/sdcard/OK')
+	except:pass
+	try:os.mkdir('/sdcard/CP')
+	except:pass
+	try:os.mkdir('/sdcard/DUMP')
+	except:pass
+	try:os.system('touch .prox.txt')
+	except:pass
+	try:os.system('clear')
 	except:pass
 	login()
