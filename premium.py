@@ -790,8 +790,18 @@ dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06'
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
+Brayenn=[]
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+#------------------[ WAKTU ]-------------------#
+def waktu():
+	now = datetime.now()
+	hours = now.hour
+	if 4 <= hours < 10:timenow = "Selamat Pagi"
+	elif 10 <= hours < 15:timenow = "Selamat Siang"
+	elif 15 <= hours < 18:timenow = "Selamat Sore"
+	else:timenow = "Selamat Malam"
+	return timenow
 def clear():
 	os.system('clear')
 def back():
