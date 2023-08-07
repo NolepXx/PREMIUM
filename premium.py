@@ -780,7 +780,7 @@ def banner():
 	sol().print(cik2)
 	ban='''
 CRACK FB'''
-# VALIDASI TOKEN
+ VALIDASI TOKEN
 def login():
 		try:
 			token = open('.token.txt','r').read()
@@ -842,9 +842,9 @@ def menu():
 	sg = '# INFORMASI USER'
 	fx = mark(sg, style='red')
 	sol().print(fx)
-	#print(x+'['+h+'•'+x+'] \033[0;34mNama Akun Sia  : '+str(my_name))
-	#print(x+'['+h+'•'+x+'] \033[0;34mID Akun Sua    : '+str(my_id))
-	#print(x+'['+h+'•'+x+'] \033[93mTanggal Croot  : '+str(birth))
+	print(x+'['+h+'•'+x+'] \033[0;34mNama Akun Sia  : '+str(my_name))
+	print(x+'['+h+'•'+x+'] \033[0;34mID Akun Sua    : '+str(my_id))
+	print(x+'['+h+'•'+x+'] \033[93mTanggal Croot  : '+str(birth))
 	print(x+'['+h+'•'+x+'] \033[923mAlamat Ip    : '+str(sh['origin']))
 	io = '\x1b[1;92m[01] Crack Dari Pertemanan Publik\n\x1b[1;92m[02] Crack ID Dari Akun Publik (masal) \n\x1b[1;92m[03] Crack Dari Grup\n\x1b[1;92m[04] Bot Share Fb\n\x1b[1;92m[05] Crack Follower Fb\n\x1b[1;92m[06] Cek Hasil Crack\n\x1b[1;92m[07] Gantin User Agent\n\033\x1b[1;92m[08] Cek Hasil Crack\n[00] Keluar'
 	oi = nel(io, style='cyan')
