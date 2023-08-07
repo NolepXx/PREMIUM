@@ -872,7 +872,7 @@ def menu(my_name,my_id):
 	print('>> 2. Crack dump ')
 	print('>> 3. Crack file   ')
 	print('>> 4. hasil   ')
-	print('>> 4. keluar   ')
+	print('>> 5. keluar   ')
 	_____alvino__adijaya_____ = input('\n>> Pilih : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
