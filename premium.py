@@ -873,7 +873,7 @@ def login_menu():
 				time.sleep(3)
 				back()
 	except:pass 
-def menu():
+def menu(name,id):
 	try:sh = requests.get('https://httpbin.org/ip').json()
 	except:sh = {'origin':'-'}
 	try:
