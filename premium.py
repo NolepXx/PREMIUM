@@ -1308,6 +1308,7 @@ def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
+	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]👹👹[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1382,6 +1383,7 @@ def validate1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
+	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]✨✨[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1499,6 +1501,7 @@ def crack2(idf,pwv):
 	fff = '%'
 	print('\r%s---> %s/%s ---> ok*%s ---> cp*%s ---> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen).replace('\n','')
+	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
