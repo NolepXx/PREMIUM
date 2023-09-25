@@ -1,5 +1,5 @@
 
-# crack-fb-
+# crack-fb-carker
 OPREK UA BIAR GA CP MASTER
 
 
@@ -27,4 +27,4 @@ pip install pycryptodome && pip install Crypto && pip install Crypto
 
 pip install stdiomask && pip install rich && pip install colorama && pip install bs4
 
-python premium.py
+python sun.py
